@@ -46,10 +46,10 @@ gate_counter = TimeTagger.CountBetweenMarkers(
     n_values=n_gates_max,
 )
 
-fname = f'test_0722.csv'
+fname = f'test_0730.csv'
 with open(fname, 'w') as file:
     writer = csv.writer(file)
-    writer.writerow(["Gated CH2", "Gate start time (ps)", "Gate width (ps)" ])
+    writer.writerow(["Gate start time (ps)", "Gate width (ps)", "Count" ])
 time.sleep(2)
 
 with open(fname, mode="a", newline="") as file:
