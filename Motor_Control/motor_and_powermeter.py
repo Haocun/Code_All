@@ -121,6 +121,10 @@ def app():
             filename = "dataV_t0.3_r0.05_mot2_0807.csv"
             filepath = os.path.join(path, filename)
 
+            #'''
+            filepath = "test.csv"
+            #'''
+
             ###                 CREATE CSV              #######
             with open(filepath, 'w', newline='') as csvfile:
                 writer = csv.writer(csvfile)
